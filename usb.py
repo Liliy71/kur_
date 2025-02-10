@@ -102,7 +102,6 @@ def analyze_directory(directory):
     
     print(f"Всего файлов проверено: {files_analyzed}")
     print(f"Обнаружено подозрительных файлов: {viruses_found}")
-    print("Результат:", "Вирус" if total_vect > 4 else "Возможно вирус" if total_vect > 0 else "Не вирус")
 
 def main():
     logged_in = False
