@@ -124,11 +124,11 @@ def main():
                 logged_in = True
                 while logged_in:
                     print("\nМеню пользователя:")
-                    print("1. Проверить USB на вирусы")
+                    print("1. Проверить директорию на вирусы")
                     print("2. Выйти из аккаунта")
                     user_choice = input("Выберите действие: ")
                     if user_choice == '1':
-                        directory_to_scan = input("Введите путь к USB-накопителю: ")
+                        directory_to_scan = input("Введите путь к директории: ")
                         if os.path.exists(directory_to_scan):
                             analyze_directory(directory_to_scan)
                         else:
